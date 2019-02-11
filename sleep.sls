@@ -1,19 +1,19 @@
-sleep1:
+sleepgit1:
   module.run:
     - name: test.sleep
     - length: 20
 
-sleep2:
+sleepgit2:
   module.run:
     - name: test.sleep
     - length: 20
 
-sleep3:
+sleepgit3:
   module.run:
     - name: test.sleep
     - length: 20
 
-sleep4:
+sleepgit4:
   module.run:
     - name: test.sleep
     - length: 20
