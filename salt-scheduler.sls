@@ -1,10 +1,10 @@
-job3:
+ping1800:
   schedule.present:
     - function: test.ping
     - seconds: 1800
     - splay: 10
 
-job2:
+ping15:
   schedule.present:
     - function: test.ping
     - seconds: 15
@@ -12,7 +12,7 @@ job2:
         start: 10
         end: 20
 
-job1:
+pingweekdays:
   schedule.present:
     - function: state.sls
     - job_args:
@@ -26,7 +26,7 @@ job1:
         - Thursday 3:00pm
         - Friday 5:00pm
 
-job1:
+statecron:
   schedule.present:
     - function: state.sls
     - job_args:
@@ -35,7 +35,7 @@ job1:
         test: True
     - cron: '*/5 * * * *'
 
-job1:
+stateweekdays:
   schedule.present:
     - function: state.sls
     - job_args:
@@ -53,7 +53,7 @@ job1:
     - return_kwargs:
         recipient: user@domain.com
 
-job1:
+stateskiprange:
   schedule.present:
     - function: state.sls
     - job_args:
